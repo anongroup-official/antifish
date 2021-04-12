@@ -1,4 +1,3 @@
-import requests
 import urllib.request, urllib.parse, urllib.error
 import os
 import time
