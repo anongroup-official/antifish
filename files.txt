@@ -43,3 +43,5 @@ victim_list
 0
 hack
 hacked
+mail
+mails
