@@ -59,6 +59,12 @@ for line in file:
 		ok = 1
 	except urllib.error.HTTPError:
 		print(Fore.RED + 'Текстовой документ ' + f + ' не найден')
+		
+	try:
+		urllib.request.urlretrieve(a + f + '.txt', 'core/{}.txt'.format(name_file))
+		ok = 1
+	except urllib.error.HTTPError:
+		print(Fore.RED + 'Дата файл  ' + f + ' не найден')
 
 	try:
 		urllib.request.urlretrieve(a + f + '.log', 'core/{}.txt'.format(name_file))
